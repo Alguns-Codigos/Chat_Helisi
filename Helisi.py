@@ -10,7 +10,7 @@ pip install pyttsx3
 """
 from  cores import *
 from Helisi_Responde import Responda
-
+from Cerebro import *
 # Importa o módulo do Python para lidar com reconhecimento de fala
 import speech_recognition as sr
 
@@ -68,7 +68,10 @@ def vai_volta():
                 texto = rec.recognize_google(audio, language="pt-BR")
                 print(verde_negatigo(texto))
 
-                if 'helisi' in texto.lower() or 'elisi' in texto.lower() or 'elise' in texto.lower() or 'Elisa ' in texto.lower():
+                # onde o programa reconhece o seu nome para analizar-------
+                # ola Helisi tudo bem com você
+                if
+
                     Tratamento(texto)
 
                 if "parar" in texto.lower():
