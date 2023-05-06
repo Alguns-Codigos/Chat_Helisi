@@ -21,8 +21,6 @@ import os
 rec = sr.Recognizer()
 
 
-
-
 # Define uma função para tratar o texto reconhecido
 def Tratamento(texto):
 
@@ -45,6 +43,9 @@ def Tratamento(texto):
         from Pesquisa_na_Net import Pesquise
         Pesquise(texto)
 
+    if "quanto é".lower() in str(texto).lower() or "calcula".lower() in str(texto).lower() or " Quanto que".lower() in str(texto).lower() :
+        from Calcula_isso import calcular
+        calcular(texto)
 
     else:
         from Pesquisa_na_Net import Pesquise
