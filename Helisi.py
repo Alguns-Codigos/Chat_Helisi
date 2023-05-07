@@ -70,7 +70,7 @@ def vai_volta():
 
                 # onde o programa reconhece o seu nome para analizar-------
                 # ola Helisi tudo bem com você
-                if
+                if "Helisi".lower() in str(texto).lower() or "Elisi".lower() in str(texto).lower()  or "Elisa".lower() in str(texto).lower() or "Elise".lower() in str(texto).lower():
 
                     Tratamento(texto)
 
